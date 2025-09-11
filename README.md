@@ -63,7 +63,7 @@ Forget cluttered toolbars and bloated menus — Tragunyth gives you the **essent
 - [ ] Custom themes  
 - [ ] Tab persistence between sessions  
 - [ ] Homespace export/import  
-
+- [ ] Currently only usable on Linux, soon to come on Windows, Android and MacOS
 ---
 
 ## 💡 Final Note  
