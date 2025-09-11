@@ -13,20 +13,77 @@
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
+  <property name="dockOptions">
+   <set>QMainWindow::DockOption::AllowTabbedDocks|QMainWindow::DockOption::AnimatedDocks</set>
+  </property>
   <widget class="QWidget" name="centralwidget">
-   <widget class="QWebEngineView" name="webEngineView">
+   <widget class="QTabWidget" name="Homespace">
     <property name="geometry">
      <rect>
-      <x>-10</x>
-      <y>-10</y>
-      <width>1991</width>
-      <height>1291</height>
+      <x>0</x>
+      <y>20</y>
+      <width>1911</width>
+      <height>1241</height>
      </rect>
     </property>
-    <property name="url">
-     <url>
-      <string>about:blank</string>
-     </url>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <property name="tabsClosable">
+     <bool>true</bool>
+    </property>
+    <property name="movable">
+     <bool>true</bool>
+    </property>
+    <property name="tabBarAutoHide">
+     <bool>false</bool>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Page</string>
+     </attribute>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="goBackBtn">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>31</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="cursor">
+     <cursorShape>PointingHandCursor</cursorShape>
+    </property>
+    <property name="text">
+     <string></string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reloadBtn">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>0</y>
+      <width>31</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string></string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="forwardBtn">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>0</y>
+      <width>31</width>
+      <height>25</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string></string>
     </property>
    </widget>
   </widget>
@@ -41,7 +98,7 @@
    </property>
    <widget class="QMenu" name="menuTragunyth_Browser">
     <property name="title">
-     <string>Tragunyth Browser</string>
+     <string></string>
     </property>
     <addaction name="actionHomepage"/>
     <addaction name="separator"/>
@@ -50,24 +107,22 @@
    <addaction name="menuTragunyth_Browser"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionHomepage">
-   <property name="text">
-    <string>Homepage</string>
-   </property>
-  </action>
   <action name="actionSettings">
    <property name="text">
     <string>Settings</string>
    </property>
   </action>
+  <action name="actionHomepage">
+   <property name="text">
+    <string>Homepage</string>
+   </property>
+  </action>
+  <action name="actiongoBack">
+   <property name="text">
+    <string>goBack</string>
+   </property>
+  </action>
  </widget>
- <customwidgets>
-  <customwidget>
-   <class>QWebEngineView</class>
-   <extends>QWidget</extends>
-   <header location="global">QtWebEngineWidgets/QWebEngineView</header>
-  </customwidget>
- </customwidgets>
  <resources/>
  <connections/>
 </ui>
